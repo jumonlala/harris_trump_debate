@@ -1,0 +1,99 @@
+body{
+    font-family: Lato, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 35px;
+}
+
+#topics-area{
+    width: 30%;
+    margin: 0 auto;
+}
+
+#topics-dropdown{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#topics-dropdown:focus, #topics-dropdown:hover, #topics-dropdown:active{
+    box-shadow:none;
+    outline:none;
+    border: 1px solid black;
+}
+
+.d3-tip{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#chart-area{
+    display: flex;
+    margin-top: 10px;
+}
+
+#word-area{
+    display:flex;
+    margin: 0 auto;
+}
+
+#x-axis{
+    display:flex;
+    width: 12%;
+    height: 5%;
+    position: absolute;
+    top: 17%;
+    left: 20%;
+    padding: 2px;
+}
+
+#y-axis{
+    display:flex;
+    width: 12%;
+    height: 5%;
+    position: absolute;
+    top: 76%;
+    left: 3%;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+}
+
+
+#scatterX-dropdown{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#scatterX-dropdown:focus, #scatterX-dropdown:hover, #scatterX-dropdown:active{
+    box-shadow:none;
+    outline:none;
+    border: 1px solid black;
+}
+
+#scatterY-dropdown{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#scatterY-dropdown:focus, #scatterY-dropdown:hover, #scatterY-dropdown:active{
+    box-shadow:none;
+    outline:none;
+    border: 1px solid black;
+}
+
+#scatter-filter{
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    margin: 2px;
+    background-color: beige;
+}
+
+.hide{
+    display: none;
+}

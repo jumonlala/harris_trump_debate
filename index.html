@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>CSE457 - Assignment 3</title>
+    <meta author="Jimin Lee">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="./bower_components/d3-tip/index.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1><span style="color: blue">Harris</span>-<span style="color: red">Trump</span> Presidential Debate 2024</h1>
+    <div id="topics-area">
+        <select id="topics-dropdown" class="form-select" aria-label="Select A Topic" onchange="wrangleData()">
+            <option selected value="default">All Topics</option>
+            <option value="economy">Economy</option>
+            <option value="abortion">Abortion</option>
+            <option value="immigration">Immigration</option>
+            <option value="crime">Crime</option>
+            <option value="values">Personal Values</option>
+            <option value="capitol attack">Capitol Attack</option>
+            <option value="2020 election">2020 Election</option>
+            <option value="israel hamas war">Israel-Hamas War</option>
+            <option value="russo ukrainian war">Russo-Ukrainian War</option>
+            <option value="afghanistan">Afghanistan</option>
+            <option value="race">Race</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="climate change">Climate Change</option>
+            <option value="closing statements">Closing Statements</option>
+        </select>
+    </div>
+    <div>
+    </div>
+    <div id ="chart-area">
+        <div id="scatter-area">
+            <div id="scatter-filter">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="trumpCheckbox" checked onchange="wrangleData()">
+                    <label class="form-check-label" for="trumpCheckbox">
+                        <span style="color: red">Trump</span>
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="harrisCheckbox" checked onchange="wrangleData()">
+                    <label class="form-check-label" for="harrisCheckbox">
+                        <span style="color: blue">Harris</span>
+                    </label>
+                </div>
+            </div>
+            <div id="x-axis">
+                <span>X-axis: </span>
+                <select id="scatterX-dropdown" class="form-select" aria-label="Select x label" onchange="wrangleData()">
+                    <option selected value="polarity">Polarity</option>
+                    <option value="subjectivity">Subjectivity</option>
+                    <option value="certainty">Certainty</option>
+                </select>
+            </div>
+            <div id = "y-axis">
+                <span>Y-axis: </span>
+                <select id="scatterY-dropdown" class="form-select" aria-label="Select y label" onchange="wrangleData()">
+                    <option selected value="certainty">Certainty</option>
+                    <option value="polarity">Polarity</option>
+                    <option value="subjectivity">Subjectivity</option>
+                </select>
+            </div>
+            
+        </div>
+
+        <div id="word-area">
+            <div id="trump-word"></div>
+            <div id="harris-word"></div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/topics.js"></script>
+    <script src="./js/scatterplot.js"></script>
+    <script src="./js/wordplot.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
