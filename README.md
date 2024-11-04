@@ -6,7 +6,7 @@ This project analyzes the semantic content and sentiment expressed in the 2024 P
 
 Users can explore topics discussed during the debate using the select box located below the webpage title.
 
-The scatterplot on the left displays the candidates’ phrases or sentences evaluated by *polarity*, *subjectivity*, and *certainty*.  Users can adjust the X and Y axes to view data from different perspectives. Definitions for each measure, along with their ranges, are provided in the [Key Terms and Insights](#key-terms-and-insights) section. Checkboxes at the top left of the scatterplot allow filtering by candidate, with red circles representing Donald Trump’s words and blue circles representing Kamala Harris's words.
+The scatterplot on the left displays the candidates’ phrases or sentences evaluated by *polarity*, *subjectivity*, and *certainty*.  Users can adjust the X and Y axes to view data from different perspectives. Definitions for each measure, along with their ranges, are provided in the [Key Terms and Insights](#key-terms-and-insights) section. Checkboxes at the top left of the scatterplot allow filtering by candidate, with red circles representing Donald Trump’s words and blue circles representing Kamala Harris's words. When you hover over each circle, the sentence or phrase, along with the exact scores of the X and Y axis measures, is displayed.
 
 The columns on the right highlight the top 10 significant words from each sentence, ranked by their weights. These weights indicate how much each word contributes to the sentence's meaning, influencing its positioning in the two-dimensional model generated through latent semantic analysis. Words with higher importance appear at the top in larger fonts.
 
